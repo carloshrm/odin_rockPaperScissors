@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors!</title>
-    <script src="rps.js"></script></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
   </head>
   <body>
-
+    <div id="mainContainer">
+      <div id="gameContainer">
+        <span id="resultsText">default</span>
+        <select name="rounds" id="roundSelect">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>           
+        <div class="text" id="feedbackContainer">      
+          <span id="textFeedBack">Choose!</span>
+        </div>
+        <div id="button_container">
+          <button class="gameButton" id="rock">Rock</button>
+          <button class="gameButton" id="paper">Paper</button>
+          <button class="gameButton" id="scissors">Scissors</button>
+        </div>
+        <button class="gameButton" id="startButton">Start!</button>
+      </div>
+  
+    </div>
+    
+    <script src="rps.js"></script></script>
   </body>
 </html>
